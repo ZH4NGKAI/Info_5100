@@ -1,0 +1,8 @@
+Add two attributes to Car.
+private double longitude;
+private double latitude;
+So I can get the accurate location of each car.
+And whenever a ride end, update the longitude and latitude and get the new location.
+This solution assumes that a car stops when it is not taking ride for passenger. And it is not the real world solutioin.
+
+If wanted to model real world ride sharing app like Uber, the app would have to update the longitude and latitude every second no matter if is taking ride for passenger or not.
