@@ -15,8 +15,8 @@ import org.apache.commons.mail.*;
  * @author leonardyuan
  */
 public class EmailSection {
-    private static String USERNAME = "1035776404@qq.com";
-    private static String PASSWORD = "xsqoyxjbuttrbbcb";
+    private static String USERNAME = "1962578253@qq.com";
+    private static String PASSWORD = "udpcvatitwbbeiaa";
     private String confirmCode;
 
     public EmailSection() {
@@ -47,7 +47,7 @@ public class EmailSection {
             email.setMsg("Confirm Code: " + confirmCode);
             email.addTo(emailaddress);
             email.send();
-        }catch(Exception e) {
+        }catch(EmailException e) {
             System.out.println("Error");
             throw new Exception("发送邮件失败");
         }
